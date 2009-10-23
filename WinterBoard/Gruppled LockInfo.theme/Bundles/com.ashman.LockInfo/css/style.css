@@ -48,6 +48,7 @@ line-height:38px;
 #Clock.big #date {
 font-size:13px;
 line-height:38px;
+color: orange;
 }
 
 /* Monthly Calendar */
@@ -70,6 +71,38 @@ text-shadow:rgba(0, 0, 0, 0.6) 0px -1px 1px !important;
 font-weight:normal;
 color:rgba(200, 200, 200, 0.65);
 }
+.sun {
+color: Red;
+}
+.sat {
+color: Blue;
+}
+
+/* ADD Start */
+.sun-today {
+
+background-color:rgba(120, 120, 120, 0.6);
+
+ color: Red;
+
+}
+
+.sat-today {
+
+background-color:rgba(120, 120, 120, 0.6);
+
+ color: Blue;
+
+}
+
+/* ADD End */
+
+.otherSun {
+color:rgba(255, 0, 0, 0.65);
+}
+.otherSat {
+color:rgba(0, 0, 255, 0.65);
+}
 
 /* Weather */
 #weather_timestamp {
@@ -84,14 +117,17 @@ padding-left:20px;
 
 #Weather .temp {
 font-weight:bold;
+color: Orange;
 }
 
 #Weather .city {
 text-transform:capitalize;
 padding-left:2px;
+color: rgba(255, 100, 100, 0.9);
 }
 
 #Weather .desc {
+color: LightBlue;
 }
 
 #Weather .weatherIcon {
@@ -225,4 +261,3 @@ color:pink;
 }
 
 */
-

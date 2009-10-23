@@ -13,11 +13,11 @@ var string_noCity = "Invalid City";
 var string_loadMore = "Load More";
 
 // Time/date (see http://php.net/date for format syntax)
-var format_time = "g:ia";
-var clock_format_time = "g:i";
+var format_time = "G:i";
+var clock_format_time = "G:i";
 
 // Format for date
-var format_date = "l, F j";
+var format_date = "Fj"+"日 "+"l";
 
 // Short format for date
 var format_date_short = "n/j/y";
@@ -28,8 +28,8 @@ var format_date_time = format_date+" "+format_time;
 // Short format for date and time
 var format_date_time_short = format_date_short+" "+format_time;
 
-var string_am = "am";
-var string_pm = "pm";
+var string_am = "AM";
+var string_pm = "PM";
 
 // Don't forget the space after the prefix and before the suffix!
 var string_begins_prefix = "Begins ";
@@ -42,7 +42,7 @@ var string_ends_suffix = "";
 var future_prefix = "in ";
 var future_suffix = "";
 var past_prefix = "";
-var past_suffix = " ago";
+var past_suffix = " 前";
 
 var string_today = "today";
 var string_yesterday = "yesterday";
@@ -55,83 +55,83 @@ var string_JustUpdated = "Just updated";
 var string_birthday = "birthday";
 
 var periods = [
-	"second",
-	"minute",
-	"hour",
-	"day",
-	"week",
-	"month",
-	"year"
+	"秒",
+	"分",
+	"時",
+	"日",
+	"週",
+	"月",
+	"年"
 ];
 
 var periods_plural = [
-	"seconds",
-	"minutes",
-	"hours",
-	"days",
-	"weeks",
-	"months",
-	"years"
+	"秒",
+	"分",
+	"時",
+	"日",
+	"週",
+	"月",
+	"年"
 ];
 
 var periods_short = [
-	"s",
-	"m",
-	"h",
-	"d",
-	"w",
-	"m",
-	"y"
+	"秒",
+	"分",
+	"時",
+	"日",
+	"週",
+	"月",
+	"年"
 ];
 
 var shortMonths = [
-	"Jan",
-	"Feb",
-	"Mar",
-	"Apr",
-	"May",
-	"Jun",
-	"Jul",
-	"Aug",
-	"Sep",
-	"Oct",
-	"Nov",
-	"Dec"
+	"1月",
+	"2月",
+	"3月",
+	"4月",
+	"5月",
+	"6月",
+	"7月",
+	"8月",
+	"9月",
+	"10月",
+	"11月",
+	"12月"
 ];
 
 var longMonths = [
-	"January",
-	"February",
-	"March",
-	"April",
-	"May",
-	"June",
-	"July",
-	"August",
-	"September",
-	"October",
-	"November",
-	"December"
+	"1月",
+	"2月",
+	"3月",
+	"4月",
+	"5月",
+	"6月",
+	"7月",
+	"8月",
+	"9月",
+	"10月",
+	"11月",
+	"12月"
 ];
 
 var shortDays = [
-	"Sun",
-	"Mon",
-	"Tue",
-	"Wed",
-	"Thu",
-	"Fri",
-	"Sat"
+"<span class='sun'>日</span>",
+"月",
+"火",
+"水",
+"木",
+"金",
+"<span class='sat'>土</span>",
 ];
 
 var longDays = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday"
+"<span class='sun'>日曜日</span>",
+"月曜日",
+"火曜日",
+"水曜日",
+"木曜日",
+"金曜日",
+"<span class='sat'>土曜日</span>",
 ];
 
 var weatherText = [

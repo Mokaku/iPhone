@@ -253,6 +253,24 @@ function updateClock(){
 				var cell = document.createElement("TD");
 				var date = current.getDate();
 				cell.className = beginDate.getMonth() == current.getMonth() ? (today == date ? "today" : "thisMonth") : "otherMonth";
+/* Add start */
+        var ymd = current.getFullYear() + "/" + (current.getMonth()+1) + "/" + date;
+        var holy = ktHolidayName(ymd);
+        if ( (cell.className == "otherMonth") &&
+             (current.getDay() == 0 || holy != "") )
+          cell.className = "otherSun";
+                                else if(current.getDay() == 0 || holy != "")
+
+          cell.className = "sun";
+        else if(current.getDay() == 6 && cell.className == "otherMonth")
+
+          cell.className = "otherSat";
+
+        else if(current.getDay() == 6)
+
+          cell.className = "sat";
+
+/* Add end */
 				cell.innerHTML = date;
 				current.setDate(date + 1);
 				row.appendChild(cell);

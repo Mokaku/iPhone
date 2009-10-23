@@ -9,13 +9,13 @@ var language = "en";
 // Arrange and/or disable (by commenting-out) sections:
 // To enable a section, remove the "//" at the beginning of the line
 var sections = [
-//	"Clock",
+	"Clock",
+	"SMS",
+	"Calls",
 	"Weather",
 	"Mail",
 	"Calendar",
-	"Calls",
 	"Voicemail",
-	"SMS",
 ];
 
 // If "Clock" is enabled in the "sections" list above, this shows the bigger custom clock
@@ -36,13 +36,13 @@ var startDay = 0;
 // Collapse or expand main sections by default; comment-out or set to false to expand...
 // To collapse a section by default, remove the "//" at the beginning of the line
 var defaultCollapsed = {
-	"Clock":true,
+//	"Clock":true,
 	"Mail":true,
 //	"Calendar":true,
 	"Calls":true,
-	"Voicemail":true,
+//	"Voicemail":true,
 	"SMS":true,
-//	"Weather":true,
+	"Weather":true,
 };
 
 // Enable global collapse/expand by swiping right (or left, if globalHide is false)?
@@ -166,8 +166,10 @@ var roundPeriods = [
 // Ex. "OCN|AU|VIC|MELBOURNE", "ASI|PH|MAKATI" e.g. 'Defiance, Ohio'|'Moscow, Russia'|'London, UK'
 // Visit http://accuweather.com to find something that works
 var locales = [
-	"43004",
-	"43201",
+	"ASI|JP|JA041|TOKYO",
+	"ASI|JP|JA035|KAWAGUCHI",
+//	"43004",
+//	"43201",
 ];
 
 // Show the first city's current weather in the main header?
